@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
       * {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
         margin: 0;
       }
       #navbar {
@@ -37,6 +38,36 @@
         flex: 3;
         justify-content: space-around;
       }
+      h2 {
+        color: gray;
+        margin-left: 10px;
+        margin-top: 10px;
+      }
+
+      #container, #form-container {
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        align-items: center;
+      }
+      #form > div {
+        display: flex;
+        justify-content: space-between;
+        border: solid 5px red;
+
+      }
+      #container > div {
+        border: solid 1px black;
+        width: 50%;
+      }
+      li {
+        list-style: none;
+      }
+      #form {
+        border: solid 3px green;
+        width: 600px;
+      }
+
     </style>
   </head>
 
@@ -51,5 +82,35 @@
         </div>
       </div>
     </nav>
+    <section>
+      <h2>Users</h2>
+      <div id="container">
+
+          <h2>Create A User</h2>
+          <div id="form-container">
+            <form id="form">
+              <div id="first">
+
+                    <h4>First Name</h4>
+                  <input type="text" name="firstname"><br>
+
+              </div>
+
+              <div id="form-elements">
+
+                <input type="text" name="lastname"><br>
+                <select name="cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="fiat">Fiat</option>
+                    <option value="audi">Audi</option>
+                  </select><br>
+              </div>
+            </form>
+          </div>
+
+
+      </div>
+    </section>
   </body>
 </html>
