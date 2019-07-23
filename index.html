@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+      }
+      #navbar {
+        display: flex;
+        background-color: blue;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        font-size: 16px;
+        text-decoration: none;
+        height: 50px;
+        align-items: center;
+        justify-content: space-between;
+        align-content: flex-start;
+        padding: 10px 20px;
+      }
+      #navbar a {
+        color: white;
+        text-decoration: none;
+      }
+
+      #logo {
+        display: flex;
+        font-size: 28px;
+        flex: 1;
+
+        justify-content: flex-start;
+      }
+      #menu {
+        display: flex;
+        flex: 3;
+        justify-content: space-around;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <div id="navbar">
+        <div id="logo"><a href="#">ACME Layout</a></div>
+        <div id="menu">
+          <a href="#">Users</a>
+          <a href="#">Departments</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
